@@ -10,10 +10,10 @@ import random
 filename = "input.txt"
 
 def paragraphs_shuffle(file_name):
-    with open(filename) as f:
+    with open(file_name) as f:
         content = f.read()
         paragraphs = content.split("\n\n")
         print('\n\n'.join(random.sample(paragraphs, len(paragraphs))))
 
 
-
+paragraphs_shuffle(filename)
